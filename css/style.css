@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import '/css/header.css';
+@import '/css/welcome-zdomine.css';
+@import '/css/pizza-name.css';
+@import '/css/chef-recommends.css';
+@import '/css/slide-chefes.css';
+@import '/css/informacoes-sobre-pizzaria.css';
+@import '/css/footer.css';
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul, p, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+ul, a, p {
+  list-style: none;
+  text-decoration: none;
+}
+

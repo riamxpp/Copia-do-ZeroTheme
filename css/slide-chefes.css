@@ -1,0 +1,72 @@
+.slide__chefes-wrapper {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: url('/img/bg3.jpg') no-repeat 0 10px;
+  overflow: hidden;
+}
+
+.slide__chefes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 80%;
+  flex-shrink: 1;
+  text-align: center; 
+
+}
+
+.slide__chefes li {
+  flex-shrink: 0;
+  width: 80%;  
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  opacity: 0;
+}
+
+.slide__chefes li.ativo {
+  opacity: 1;
+  transition: .3s;
+}
+
+.slide__chefes  p {
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+.slide__chefes img{
+  border-radius: 50%;
+}
+ 
+.navSlide {
+  display: flex;
+  justify-content: space-around;
+  width: 120px;
+  margin: 0 10px;
+}
+.navSlide li{
+  width: 10px;
+  height: 10px;
+  background-color: #6e6c6c ;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.navSlide li:hover {
+  background-color:#bbb8b8;
+}
+
+.navSlide li.ativaNav {
+  background-color: #bbb8b8;
+}
+
+@media (max-width: 600px){
+  /* .slide__chefes li {
+    width: 50%;
+    margin-bottom: 10px;
+  } */
+}

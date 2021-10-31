@@ -1,0 +1,86 @@
+.pizza__name {
+  display: flex;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pizza__name-itens {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pizza__name-itens a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+}
+
+.pizza__name-texto-div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px black;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.pizza__name-texto-div p {
+  max-width: 80%;
+}
+
+.pizza__name-texto-div p:first-child {
+  color: #fff;
+}
+
+.pizza__name-texto-div p:last-child {
+  color: #d64853;
+}
+
+.pizza__name-texto-div.ativo {
+  background: #df5d5d70;
+  font-size: 1.2rem;
+}
+
+.pizza__name-imagem {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.pizza__name-imagem img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: .5s;
+}
+
+.pizza__name-imagem img.ativo {
+  transform: scale(1.2);
+  transition: .5s;
+  z-index: 2;
+}
+
+@media (max-width: 950px){
+  .pizza__name {
+    flex-direction: column;
+    background: url('/img/subscribe_bg.jpg');
+  }
+  .pizza__name-itens {
+    width: 30%;
+  }
+}
+
+@media (max-width: 550px){
+  .pizza__name-texto-div.ativo {
+    font-size: .8rem;
+    font-weight: bold ;
+  }
+}

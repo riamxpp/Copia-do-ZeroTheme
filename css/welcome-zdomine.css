@@ -1,0 +1,136 @@
+.welcome__zdominos {
+  display: grid;
+  grid-template-columns: 1fr 600px 400px 1fr;
+  min-height: 600px;
+  max-height: 100%;
+  align-items: center;
+}
+
+.informacoes__welcome-zdominos {
+  grid-column: 2;
+  width: 570px;
+  height: 500px;
+}
+
+.informacoes__welcome-zdominos h1{
+  font-size: 2.5rem;
+  font-family: cursive;
+  color: #2b2a2a;
+  padding: 10px 10px 10px 0px;
+}
+
+.informacoes__welcome-zdominos > h1 > span {
+  color: #d64853;
+}
+
+.informacoes__welcome-zdominos-paragrafo {
+  font-size: 1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #615a5a;
+}
+
+.informacoes__welcome-zdominos p {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  color: #413e3e;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.informacoes__welcome-zdominos-paragrafo-citacao {
+  padding: 0 50px 10px 50px;
+  margin: 30px auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3rem;
+  width: 450px;
+  position: relative;
+}
+
+.informacoes__welcome-zdominos-paragrafo-citacao::before {
+  content: '\201C';
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.informacoes__welcome-zdominos-paragrafo-citacao::after {
+  content: '\201D';
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.imagens__welcome-zdominos {
+  grid-column: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 518px;
+  height: 460px;
+  gap: 10px;
+}
+
+.imagens__welcome-zdominos img {
+  width: 250px;
+}
+
+.informacoes__welcome-zdominos button {
+  width: 130px;
+  height: 45px;
+  border-radius: 4px;
+  border: 2px solid #d64853;
+  background: #d64853;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.informacoes__welcome-zdominos button:hover {
+  background-color: white;
+  color: #d64853;
+  border: 2px solid #d64853;
+  transition: .5s;
+}
+
+@media (max-width: 1250px){
+  .welcome__zdominos {
+    grid-template-columns: 1fr 520px 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .informacoes__welcome-zdominos {
+    grid-column: 2;
+    grid-row: 1;
+    width: 518px;
+    height: 550px;
+  }
+  .imagens__welcome-zdominos {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .informacoes__welcome-zdominos-paragrafo-citacao {
+    width: 410px;
+  }
+}
+
+@media (max-width: 550px){
+  .welcome__zdominos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .informacoes__welcome-zdominos {
+    width: 350px;
+    height: 550px;
+  }
+  .informacoes__welcome-zdominos button {
+    margin-top: 20px;
+  }
+  .imagens__welcome-zdominos {
+    display: none;
+  }
+  .informacoes__welcome-zdominos-paragrafo-citacao {
+    display: none;
+  }
+}
